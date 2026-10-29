@@ -3,41 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bienvenido a mi página - Jesiel Velasco</title>
+  <title>Jesiel Velasco</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f7f8fa;
+      color: #12141a;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
       background: #ffffff;
-      color: #000000;
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 40px;
+      border: 1px solid #e8eaf0;
+      border-radius: 20px;
+      padding: 48px 36px;
       text-align: center;
+      box-shadow: 0 1px 2px rgba(18, 20, 26, 0.04), 0 16px 40px rgba(18, 20, 26, 0.06);
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 26px;
+      font-weight: 600;
+      color: #ffffff;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6 55%, #ec4899);
+      box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 12px;
     }
 
     h1 {
-      font-size: 28px;
-      font-weight: normal;
-      margin-bottom: 16px;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, #6366f1, #ec4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
 
     p {
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.65;
+      color: #4b5563;
     }
 
-    hr {
-      margin: 24px auto;
-      width: 200px;
-      border: none;
-      border-top: 1px solid #cccccc;
+    .divider {
+      height: 1px;
+      width: 100%;
+      margin: 32px 0;
+      background: linear-gradient(90deg, transparent, #e8eaf0, transparent);
+    }
+
+    footer {
+      font-size: 13px;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 36px 24px;
+      }
+      h1 {
+        font-size: 25px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenido a mi página</h1>
-  <p>Jesiel Velasco</p>
+  <main class="card">
+    <div class="avatar">JV</div>
 
-  <hr />
+    <p class="eyebrow">Bienvenido a mi página</p>
+    <h1>Hola, soy <span>Jesiel Velasco</span></h1>
+    <p>Gracias por visitar mi espacio. Hecho con dedicación y ganas de compartir.</p>
 
-  <p>Gracias por su visita.</p>
+    <div class="divider"></div>
+    <footer>&copy; 2026 Jesiel Velasco</footer>
+  </main>
 </body>
 </html>
